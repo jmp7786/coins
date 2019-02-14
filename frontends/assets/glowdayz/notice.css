@@ -1,0 +1,181 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, select, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    color: #363636;
+    box-sizing: border-box;
+}
+::-webkit-input-placeholder {
+    color: #adacac;
+}
+::-moz-placeholder {
+    color: #adacac;
+}
+:-ms-input-placeholder {
+    color: #adacac;
+}
+:-moz-placeholder {
+    color: #adacac;
+}
+.placeholder {
+    color: #adacac !important;
+}
+html {
+    height: 100%;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+body {
+    font-family: 'Apple SD Gothic Neo', 'Droid Sans', 'Helvetica Neue', '돋움', '바탕';
+    background: #f8f8f8;
+    font-size: 12px;
+}
+fieldset,img {
+    border: 0;
+}
+ol,ul {
+    list-style: none;
+}
+address,em {
+    font-style: normal;
+}
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+iframe {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0
+}
+button {
+    border: 0;
+    background: transparent;
+}
+button, input, select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    box-shadow: none;
+    cursor: pointer;
+    border-radius: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+}
+textarea {
+    resize: none;
+}
+
+/* 공지사항 */
+.m-notice {
+    width: 100%;
+    height: auto;
+    background: #f8f8f8;
+    padding-bottom: 20px;
+}
+.m-notice .m-moreView-btn {
+    display: none;
+}
+.m-notice.more .m-moreView-btn {
+    display: block;
+}
+.m-notice a {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: #fff;
+    border-bottom: 1px solid #ececec;
+    text-align: left;
+    padding: 10px 38px 10px 14px;
+}
+.m-notice a:active{
+    background:rgba(242,242,242,1);
+}
+.m-notice h2 {
+    font-size: 13px;
+    line-height: 17px;
+}
+.m-notice .subject {
+    margin-left: 2px;
+}
+.m-notice h3 {
+    color: #adacac;
+    font-size: 12px;
+    line-height: 16px;
+}
+.m-notice .icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 34px;
+    height: 100%;
+    background: no-repeat url(/static/assets/glowdayz/img/arrow-right_grey.png) center/10px 20px;
+}
+.m-notice .cover {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+/* 공지사항 */
+
+/* 더보기 버튼 */
+.m-moreView-btn {
+    display: none;
+    width: 100%;
+    height: auto;
+    padding: 10px 14px 0 14px;
+}
+.m-moreView-btn .moreView-btn {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: solid 1px #d0d0d0;
+    background: #fff;
+    line-height: 37px;
+    text-align: center;
+}
+.m-moreView-btn .moreView-btn > span {
+    display: inline-block;
+    width: auto;
+    background: no-repeat url(/static/assets/glowdayz/img/arrow-down_grey.png) right center / 14px 10px;
+    padding-right: 19px;
+    color: #514e4e;
+    font-weight: 500;
+    font-size: 13px;
+}
+.m-moreView-btn .cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+/* 더보기 버튼 */

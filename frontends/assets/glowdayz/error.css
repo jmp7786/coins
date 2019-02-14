@@ -1,0 +1,166 @@
+::-webkit-input-placeholder {
+    color: #adacac;
+}
+::-moz-placeholder {
+    color: #adacac;
+}
+:-ms-input-placeholder {
+    color: #adacac;
+}
+:-moz-placeholder {
+    color: #adacac;
+}
+.placeholder {
+    color: #adacac !important;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, select, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    color: inherit;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+body {
+    font-family: 'Apple SD Gothic Neo', 'Droid Sans', 'Helvetica Neue', '돋움', '바탕';
+    background: #f8f8f8;
+    font-size: 12px;
+    color: #363636;
+}
+fieldset,img {
+    border: 0;
+}
+ol,ul {
+    list-style: none;
+}
+address,em {
+    font-style: normal;
+}
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+iframe {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0
+}
+button {
+    border: 0;
+    background: transparent;
+}
+button, input, select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+}
+textarea {
+    resize: none;
+}
+.glowdayz .error_web.wrapperOfAll > section.article section.img {
+    padding-top: 64px;
+}
+.glowdayz .error_web.wrapperOfAll > section.article section.img > img {
+    display: block;
+    width: 173px;
+    height: auto;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.glowdayz .error_web.wrapperOfAll > section.article section.text {
+    padding: 20px 0;
+}
+.glowdayz .error_web.wrapperOfAll > section.article section.text > div {
+    text-align: center;
+}
+.glowdayz .error_web.wrapperOfAll > section.article section.text > div:nth-of-type(1) {
+    padding-bottom: 6px;
+}
+.glowdayz .error_web.wrapperOfAll > section.article section.text > div:nth-of-type(2) {
+    padding-bottom: 9px;
+}
+.glowdayz .error_web.wrapperOfAll > section.article section.text > div > p {
+    color: #63616d;
+    text-align: center;
+}
+.glowdayz .error_web.wrapperOfAll > section.article section.text > div:nth-of-type(1) > p {
+    font-weight: 900;
+    font-size: 19px;
+    line-height: 0.89;
+}
+.glowdayz .error_web.wrapperOfAll > section.article section.text > div:nth-of-type(2) > p {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 1.13;
+}
+.glowdayz .error_web.wrapperOfAll > section.article section.text > div:nth-of-type(3) > p {
+    min-height: 28px;
+    color: #adacac;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.17;
+}
+.glowdayz .error_web.wrapperOfAll > section.article section.btn {
+    text-align: center;
+}
+.glowdayz .error_web.wrapperOfAll > section.article section.btn > a:nth-of-type(1){
+    background: #514e4e;
+}
+.glowdayz .error_web.wrapperOfAll > section.article section.btn > a:nth-of-type(2){
+    background: #d0021b;
+    margin-left: 7px;
+}
+.glowdayz .error_web.wrapperOfAll > section.article section.btn > a {
+    display: inline-block;
+    width: 112px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.glowdayz .error_web .error, .glowdayz .error_web .e404, .glowdayz .error_web .e403{
+    display: none;
+}
+.glowdayz .error_web.error .error{
+    display: block;
+}
+.glowdayz .error_web.e404 .e404{
+    display: block;
+}
+.glowdayz .error_web.e403 .e403{
+    display: block;
+}

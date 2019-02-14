@@ -1,0 +1,18 @@
+version: '3' 
+services:
+    redis:
+        image: redis:latest
+        expose:
+            - 6379
+    uwsgi:
+        #build: .
+        image: glowpick-api:latest
+        environment:
+            GLOWPICKAPI_DEBUG: "True"
+            REDIS_URL: redis://redis
+        command: ["uwsgi", "--ini", "/usr/src/app/backends/api/wsgi.ini"]
+        links:
+            - redis:redis
+        ports:
+            - 8000:8000
+

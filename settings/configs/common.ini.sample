@@ -1,0 +1,51 @@
+[SERVERENV]
+debug = False
+allowed_host = #host
+secret_key = #secret-key
+
+[DATABASE-AURORA-MASTER]
+engine = django.db.backends.mysql
+name = #db_name
+user = #user
+password = #password
+host = #host
+port = #port
+
+[DATABASE-AURORA-R-ENDPOINT]
+engine = django.db.backends.mysql
+name = #db_name
+user = #user
+password = #password
+host = #host
+port = #port
+
+[DATABASE-PG-MASTER]
+engine = django.db.backends.postgresql_psycopg2
+name = #db_name
+user = #user
+password = #password
+host = #host
+port = #port
+
+[DATABASE-PG-R-ENDPOINT]
+engine = django.db.backends.postgresql_psycopg2
+name = #db_name
+user = #user
+password = #password
+host = #host
+port = #port
+
+[ELASTICSEARCH]
+host = #elastic-host
+
+[AWS]
+access_key = #aws-key
+secret_key = #aws-secret-key
+
+[CDN]
+domain = #host
+
+
+[ADS]
+url = #host
+api_key = #api-key

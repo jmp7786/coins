@@ -1,0 +1,116 @@
+::-webkit-input-placeholder {
+    color: #adacac;
+}
+::-moz-placeholder {
+    color: #adacac;
+}
+:-ms-input-placeholder {
+    color: #adacac;
+}
+:-moz-placeholder {
+    color: #adacac;
+}
+.placeholder {
+    color: #adacac !important;
+}
+.m-noticeDetail header h1{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: #363636;
+    box-sizing: border-box;
+    font-family: 'Apple SD Gothic Neo', 'Droid Sans', 'Helvetica Neue', '돋움', '바탕';
+    font-size: 13px;
+}
+.m-noticeDetail header h2 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: #363636;
+    box-sizing: border-box;
+    font-family: 'Apple SD Gothic Neo', 'Droid Sans', 'Helvetica Neue', '돋움', '바탕';
+    font-size: 12px;
+}
+.m-noticeDetail article {
+    font-family: 'Apple SD Gothic Neo', 'Droid Sans', 'Helvetica Neue', '돋움', '바탕';
+    font-size: 14px;
+}
+.m-noticeDetail article * {
+    /*font: inherit;*/
+}
+html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 100%;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: #fff;
+}
+.m-noticeDetail header fieldset,.m-noticeDetail header img {
+    border: 0;
+}
+.m-noticeDetail header ol,ul {
+    list-style: none;
+}
+.m-noticeDetail header a {
+    cursor: pointer;
+    text-decoration: none;
+}
+.m-noticeDetail header a:hover {
+    text-decoration: none;
+}
+.m-noticeDetail header iframe {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0
+}
+.m-noticeDetail header button {
+    border: 0;
+    background: transparent;
+}
+.m-noticeDetail header button,.m-noticeDetail header input,.m-noticeDetail header select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+.m-noticeDetail header textarea {
+    resize: none;
+}
+
+.m-noticeDetail header {
+    width: 100%; height: auto;
+    padding: 10px 14px;
+    box-sizing: border-box;
+    background: #fff;
+    font-size: 13px;
+    border-bottom: 1px solid #ececec;
+}
+.m-noticeDetail h1 {
+    font-size: 13px !important;
+    font-weight: normal;
+    color: #363636 !important;
+    line-height: 17px;
+}
+.m-noticeDetail h2 {
+    font-size: 12px !important;
+    color: #adacac !important;
+    font-weight: normal !important;
+    line-height: 16px;
+}
+.m-noticeDetail article {
+    background: #fff;
+    padding: 20px 14px;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}

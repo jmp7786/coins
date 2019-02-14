@@ -1,0 +1,603 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, select, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    color: inherit;
+    box-sizing: border-box;
+    outline: none;
+}
+::-webkit-input-placeholder {
+    color: #adacac;
+}
+::-moz-placeholder {
+    color: #adacac;
+}
+:-ms-input-placeholder {
+    color: #adacac;
+}
+:-moz-placeholder {
+    color: #adacac;
+}
+.placeholder {
+    color: #adacac !important;
+}
+html {
+    height: 100%;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+body {
+    font-family: 'Apple SD Gothic Neo', 'Droid Sans', 'Helvetica Neue', '돋움', '바탕';
+    background: #f8f8f8;
+    font-size: 12px;
+    color: #363636;
+}
+fieldset,img {
+    border: 0;
+}
+ol,ul {
+    list-style: none;
+}
+address,em {
+    font-style: normal;
+}
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+iframe {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0
+}
+button {
+    border: 0;
+    background: transparent;
+}
+button, input, select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    box-shadow: none;
+    cursor: pointer;
+    border-radius: 0;
+}
+input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+}
+textarea {
+    resize: none;
+}
+.cover {
+    cursor: pointer;
+}
+
+/* 프로필 */
+.glowdayz.postalCode .m-profile {
+    display: none;
+}
+.m-profile {
+    display: block;
+}
+.m-profile form {
+    background: #fff;
+    padding: 10px 14px;
+}
+.m-profile dl {
+    padding: 4px 0 4px 0;
+}
+.m-profile dl > dt:first-of-type {
+    margin-top:0;
+}
+.m-profile dl dt {
+    top: 10px;
+    left: 0;
+    width: 71px;
+    color: #adacac;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.54;
+    float: left;
+    margin-top: 8px;
+    padding-top: 6px;
+    min-height:32px;
+}
+.m-profile dl dt:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+.m-profile dl > dd:first-of-type {
+    margin-top:0;
+}
+.m-profile dl dd {
+    min-height: 32px;
+    margin-left: 71px;
+    margin-top:8px;
+}
+.m-profile input {
+    display: block;
+    width: 100%;
+    height: 32px;
+    padding: 0 12px;
+    color: #363636;
+    font-size: 14px;
+    font-weight: normal;
+    border: 1px solid #d0d0d0;
+}
+.m-profile form > p {
+    padding: 6px 0 6px 71px;
+    color: #adacac;
+    font-size: 12px;
+    font-weight: normal;
+}
+.m-profile .necessary-form {
+    padding: 0 12px !important;
+}
+.m-profile .address:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+.m-profile .address * {
+    display: block;
+    float: left;
+}
+.m-profile .address *:not(:last-child) {
+    margin-bottom: 4px;
+}
+.m-profile .address > div:nth-of-type(1) {
+    display: block;
+    width: 83px;
+}
+.m-profile .contenteditable {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0 !important;
+    line-height: 20px !important;
+    background: #ececec;
+    color: #63616D;
+    padding: 5px 12px !important;
+}
+.m-profile .contenteditable-autoheight {
+    min-height: 32px !important;
+    height: auto !important;
+}
+.m-profile .contenteditable-autoheight > div[contenteditable] {
+    min-height: 30px !important;
+    height: auto !important;
+}
+.m-profile .address .disabledInput {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 32px;
+    color: #363636;
+    font-size: 14px;
+    font-weight: normal;
+    border: 1px solid #d0d0d0;
+}
+.m-profile .address .disabledInput input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 12px;
+    border: 0;
+}
+.m-profile .address .disabledInput .cover {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.m-profile .findPostalCode-btn {
+    display: block;
+    width: auto;
+    height: 32px;
+    padding: 0 9px;
+    background: #514e4e;
+    margin-left: 5px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+}
+/* 프로필 - 저장버튼 */
+.m-profile > div {
+    text-align: center;
+    padding-bottom: 35px;
+}
+.m-profile .btn_wrap {
+    padding: 35px 0 45px 0;
+}
+.m-profile .save-btn {
+    display: block;
+    width: 97px;
+    height: 40px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #d0021b;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    cursor: pointer;
+}
+.m-profile .save-btn[disabled] {
+    background: #ececec;
+    color: #adacac;
+    cursor: default;
+}
+/* 프로필 - 저장버튼 */
+/* 프로필 */
+
+/* 우편번호 검색 */
+.glowdayz.postalCode .m-postalCode {
+    display: block;
+}
+.m-postalCode {
+    display: none;
+}
+.m-postalCode .wrapper {
+    padding: 21px 14px 20px 14px;
+}
+@media (max-width: 330px) {
+    .m-postalCode .wrapper {
+        padding: 21px 9px 20px 9px;
+    }
+}
+.m-postalCode .searchForm {
+    position: relative;
+    display: block;
+    height: 32px;
+    padding-right: 75px;
+}
+.m-postalCode .search-btn {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: inherit;
+    background: #d0021b;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+.m-postalCode .searchForm > input {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: inherit;
+    border: 1px solid #d0d0d0;
+    background: #fff;
+    font-size: 14px;
+    padding: 0 12px;
+}
+
+.glowdayz .m-postalCode .description {
+    color: #adacac !important;
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+.m-postalCode .description > .header {
+    display: block;
+    height: 18px;
+    color: #363636;
+    margin: 10px 0 5px 0;
+}
+.m-postalCode .result li.header {
+    height: 40px;
+    padding: 10px 12px;
+    color: #514e4e; font-size:12px;
+    background: #ececec;
+}
+.m-postalCode .result li.header.over {
+    height: auto;
+}
+.m-postalCode .result li.header > span {
+    color: #d0021b;
+}
+.m-postalCode .result li.noResult {
+    height: 93px;
+    line-height: 93px;
+    color: #514e4e;
+    font-size:12px;
+    padding:0;
+    text-align: center;
+    border-top: 0 !important;
+    background: #fff;
+}
+.m-postalCode .result li:not(.list) {
+    border: solid 1px #d0d0d0;
+}
+.m-addressList {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 96px;
+    background: #fff;
+    border-left: solid 1px #d0d0d0;
+    border-right: solid 1px #d0d0d0;
+    border-bottom: 1px solid #d0d0d0;
+}
+.m-addressList a:active{
+    background:rgba(242,242,242,1);
+}
+.m-addressList .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.m-addressList > div {
+    display: block;
+    width: 100%;
+    height: inherit;
+    padding: 8px 64px 8px 0;
+}
+.m-addressList .left {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.m-addressList .left > div {
+    display: table;
+    width: 100%;
+    height: 40px;
+}
+.m-addressList .left > div > div {
+    display: table-cell;
+    width: 100%;
+    height: inherit;
+    vertical-align: middle;
+    text-align: left;
+    color: #514e4e;
+    font-size: 12px;
+    line-height: 1.4;
+    padding-left: 52px;
+}
+.m-addressList .left > div > div {
+    background: no-repeat 10px 12px/32px 16px;
+}
+.m-addressList .left > div:nth-of-type(1) > div {
+    background-image:url(/static/assets/glowdayz/img/icon_street.png) !important;
+}
+.m-addressList .left > div:nth-of-type(2) > div {
+    background-image:url(/static/assets/glowdayz/img/icon_lotNumber.png) !important;
+}
+.m-addressList .left > div > div > span {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 51px;
+    height: 100%;
+}
+.m-addressList .right {
+    display: table;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 64px;
+    height: 100%;
+}
+.m-addressList .right > div {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    line-height: 96px;
+    text-align: center;
+    color: #514e4e;
+    font-size: 12px;
+}
+
+/* 상황에 따른 노출 여부 */
+.m-postalCode .result {
+    display: none;
+}
+.m-postalCode .noResult {
+    display: none;
+}
+.m-postalCode .header.over {
+    display: none;
+}
+.m-postalCode .m-moreView-btn {
+    display: none;
+}
+
+.m-postalCode.s-searching .result {
+    display: none !important;
+}
+
+.m-postalCode.s-searched .result {
+    display: block;
+}
+
+.m-postalCode.s-noResult .noResult {
+    display: block;
+}
+
+.m-postalCode.s-over .result .header {
+    display: none;
+}
+.m-postalCode.s-over .header.over {
+    display: block;
+}
+
+.m-postalCode.s-more .m-moreView-btn {
+    display: block;
+}
+
+.m-postalCode.s-noMore .m-moreView-btn {
+    display: none;
+}
+/* 상황에 따른 노출 여부 */
+/* 우편번호 검색 */
+
+/* 더보기 버튼 */
+.m-moreView-btn {
+    display: none;
+    width: 100%;
+    height: auto;
+    padding: 10px 0 0 0;
+}
+.m-moreView-btn .moreView-btn {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: solid 1px #d0d0d0;
+    background: #fff;
+    line-height: 38px;
+    text-align: center;
+}
+.m-moreView-btn .moreView-btn > span {
+    display: inline-block;
+    width: auto;
+    background: no-repeat url(/static/assets/glowdayz/img/arrow-down_grey.png) right center / 14px 10px;
+    padding-right: 19px;
+    color: #514e4e;
+    font-weight: bold;
+    font-size: 13px;
+}
+.m-moreView-btn .cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+/* 더보기 버튼 */
+
+/* 서브페이지 */
+.l-sub header:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+.l-sub header {
+    position: relative;
+    width: 100%;
+    height: 47px;
+    background: #514e4e;
+    color: #fff;
+    font-size: 14px;
+    padding-left: 14px;
+    padding-top: 15px;
+}
+.l-sub .fixHeader {
+    z-index: 2;
+    position: fixed;
+}
+.l-sub header .close-btn {
+    float: right;
+    display: block;
+    position: absolute;
+    top: 7px;
+    right: 14px;
+    width: 52px;
+    height: 32px;
+    background: #adacac;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+}
+.l-sub .article-fixHeader {
+    padding-top: 68px;
+}
+/* 서브페이지 */
+
+/* 잠시만 기다려 주세요... */
+.s-waiting .m-waitInteraction {
+    display: block;
+}
+.m-waitInteraction {
+    display: none;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255,255,255,0.5);
+}
+.m-waitInteraction > div {
+    position: absolute;
+    width: 164px;
+    height: 115px;
+    border: solid 1px #ececec;
+    background: #fff;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+.m-waitInteraction > div > div {
+    display: block;
+    padding-top: 7px;
+}
+.m-waitInteraction img {
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+
+}
+.m-waitInteraction p {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    color: #63616d;
+}
+/* 잠시만 기다려 주세요... */
+
+/* 다음 api */
+.daumapi {
+    display: none;
+    box-sizing: content-box;
+    position: relative;
+    border: solid 1px !important;
+}
+.daumapi * {
+    min-width: 0 !important;
+}
+iframe {
+    min-width: 0 !important;
+}
+/* 다음 api */

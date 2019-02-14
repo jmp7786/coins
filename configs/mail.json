@@ -1,0 +1,21 @@
+{
+  "mailer":[
+    {
+      "id":"jmp9872345@gmail.com",
+      "pw":"wvnoleglephbhzca"
+    },
+    {
+      "id":"jmp9872346@gmail.com",
+      "pw":"zsozklwfvmxrvdcl"
+    },
+    {
+      "id":"macicanto@gmail.com",
+      "pw":"kahkywlzhgvgzaaa"
+    }
+  ],
+ "admin":["bananam8@naver.com"],
+  "level":{
+    "1":["bananam8@naver.com"],
+    "2":["bananam8@naver.com","hkangp9009@gmail.com"]
+  }
+}

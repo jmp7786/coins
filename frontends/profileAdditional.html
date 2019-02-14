@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <!-- META -->
+
+    <title>프로필 추가정보</title>
+    <!-- TITLE -->
+
+    <style>.js #fouc{display:none;}</style>
+    <link rel="stylesheet" href="/static/assets/glowdayz/profileAdditional.css">
+    <!-- STYLESHEET -->
+
+    <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+    <!-- SCRIPT -->
+</head>
+<body id="fouc" class="glowdayz">
+<div class="m-profile">
+    <form>
+        <dl>
+            <dt>이름</dt>
+            <dd>
+                <input type="text" data-title="이름" data-key="name" class="necessary-form" title="">
+            </dd>
+            <dt>연락처</dt>
+            <dd>
+                <input type="number" data-title="연락처" data-key="contact" class="necessary-form" title="">
+            </dd>
+            <dt>주소</dt>
+            <dd class="address">
+                <div class="disabledInput contenteditable-wrapper">
+                    <div contenteditable="true" data-title="주소" data-key="zip" class="postalCode address contenteditable necessary-form"></div>
+                    <div class="cover toPostalCode"></div>
+                </div>
+                <button type="button" class="findPostalCode-btn toPostalCode">우편번호 찾기</button>
+                <div class="disabledInput contenteditable-wrapper contenteditable-autoheight">
+                    <div contenteditable="true" data-title="주소" data-key="address" class="address-input contenteditable necessary-form"></div>
+                    <div class="cover toPostalCode"></div>
+                </div>
+                    <input data-title="상세주소" data-key="address_more" class="address_more necessary-form" placeholder="상세주소를 입력해주세요.">
+            </dd>
+        </dl>
+        <p>※ 평가단&이벤트 당첨 시, 당첨 안내와 상품 발송에 필요한 정보이오니 정확히 입력해주세요.</p>
+    </form>
+    <div class="btn_wrap">
+        <button type="button" class="save-btn" disabled>저장</button>
+    </div>
+</div>
+<div class="l-sub">
+    <div class="m-postalCode">
+        <header class="fixHeader">
+            우편번호 검색
+            <button type="button" class="close-btn">
+                닫기
+            </button>
+        </header>
+        <article class="wrapper article-fixHeader"><div class="daumapi"></div></article>
+    </div>
+</div>
+<div class="m-waitInteraction">
+    <div>
+        <div>
+            <img src="/static/assets/glowdayz/img/icon_spinner_red.svg" alt="">
+        </div>
+        <p>잠시만 기다려 주세요...</p>
+    </div>
+</div>
+
+<!-- SCRIPT -->
+<script src="/static/assets/libs/jquery-3.1.1.min.js"></script>
+<script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js"></script>
+<!-- LIBS -->
+<script src="/static/assets/glowdayz/profileAdditional.js"></script>
+<script>document.getElementById('fouc').style.display="block";</script>
+<!-- SCRIPT -->
+</body>
+</html>

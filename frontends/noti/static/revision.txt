@@ -1,0 +1,3 @@
+JOB=dev-gp-frontend-sync 
+BUILD_NUMBER=70 
+FRONT_REV=41a24fd40a5b47c0a491ca0cd9ecac610e4eb869

@@ -28,7 +28,7 @@ djangorestframework-jwt==1.10.0
 docutils==0.14
 elasticsearch==2.3.0
 itypes==1.1.0
-Jinja2==2.10
+Jinja2==2.11.3
 jmespath==0.9.3
 kombu==4.0.2
 Markdown==2.6.7
